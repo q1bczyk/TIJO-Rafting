@@ -38,7 +38,7 @@ Platforma programistyczna opracowana przez Microsoft, obejmująca środowisko ur
 PostgreSQL jest obiektowo-relacyjnym systemem do zarządzania bazą danych wykorzystującą język SQL. System udostępnia wiele funkcji pozwalających między innymi na wykonywanie oraz optymalizowanie zapytań SQL, tworzenie i wykonywanie procedur, wykonywanie transakcji.
 
 ##### 3. Angular
-Angular to framework zaprojektowany przez Google, który korzysta z języka TypeScript. Angular pozwala na szybkie budowanie aplikacji webowych. Początkowo Angular pozwalal na budowanie aplikacji jednostronicowe ale ostatnie aktualizacje wzbogaciły framweork w renderowanie po stronie serwera. 
+Angular to framework zaprojektowany przez Google, który korzysta z języka TypeScript. Angular pozwala na szybkie budowanie aplikacji webowych. Początkowo Angular pozwalał na budowanie aplikacji jednostronicowych ale ostatnie aktualizacje wzbogaciły framweork w renderowanie po stronie serwera. 
 
 
 
