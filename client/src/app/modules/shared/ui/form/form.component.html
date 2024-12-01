@@ -1,0 +1,45 @@
+<form 
+    class="d-flex flex-column gap-2"
+    [formGroup]="formSettings.formGroup"
+    (ngSubmit)="onFormSubmit()">
+   @for (control of controls; track $index){
+    <label for="control">{{formSettings.fields[control].label}}</label>
+    @if (formSettings.fields[control].fieldType === 'password' || 
+        formSettings.fields[control].fieldType === 'text' || 
+        formSettings.fields[control].fieldType === 'textarea'){
+        <input 
+        pInputText 
+        [id]="control"
+        [type]="formSettings.fields[control].fieldType"
+        [placeholder]="formSettings.fields[control].label"
+        [formControlName]="control"
+        />
+        @if (formSettings.formGroup.get(control)?.invalid && formSettings.formGroup.get(control)?.touched && control !== 'confirmPassword' ){
+            <small id="username-help" class="text-danger">
+                <i class="bi bi-info-circle-fill me-2"></i> 
+                {{formSettings.fields[control].validationMessage}}
+           </small>
+       }
+       @if(control === 'confirmPassword' && formSettings.formGroup.errors?.['passwordMismatch'] && formSettings.formGroup.get(control)?.touched){
+        <small id="password-mismatch-help" class="text-danger">
+            <i class="bi bi-info-circle-fill me-2"></i> 
+            Hasła muszą być takie same.
+        </small>
+        }
+    }
+   }
+    <button 
+        [disabled]="isFormInvalid() || loadingService.isLoading()"
+        class="btn btn-primary rounded mt-2 p-2"
+        type="submit"
+        >
+        @if (loadingService.isLoading()){
+            <div class="spinner-border spinner-border-sm text-secondary text-center" role="status">
+                <span class="sr-only"></span>
+            </div>
+        }
+        @else {
+            {{formSettings.buttonLabel}}
+        }
+    </button>
+</form>

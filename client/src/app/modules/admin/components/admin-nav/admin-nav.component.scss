@@ -1,0 +1,109 @@
+@import "../../../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.navigation{    
+    width: 220px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 1;
+    background-color: white;
+    border-right: 1px solid var(--surface-300);
+
+
+    .logo{
+        width: 100%;
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+
+        i{
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            color: var(--orange-500);
+        }
+    }
+    
+    ul{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        li{
+            padding: 0px 20px;
+            width: 90%;
+            min-height: 40px;
+            border-end-end-radius: 10px;
+            border-start-end-radius: 10px;
+            display: flex;
+            align-items: center;
+            transition: all ease-in-out 0.2s;
+            position: relative;
+            margin-top: 2px;
+            
+            i{
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            div{
+                position: absolute;
+                left: 0;
+                height: 40px;
+                width: 4px;
+                transition: all ease-in-out 0.2s;
+            }
+
+            &:hover{
+                cursor: pointer; 
+
+                div{
+                    background-color: var(--orange-500);
+                }
+
+                a{
+                    color: black;
+                }
+            }
+
+            a{
+                color: var(--surface-600);
+            }
+        }
+
+        .active{
+
+            background-color: #ffeccc;
+
+            div{
+                background-color: var(--orange-500);
+            }
+
+            &:hover{
+                cursor: default;
+                background-color: #ffeccc;
+            }
+
+            a{
+                cursor: default;
+                color: black;
+            }
+        }
+    }
+
+    a{
+        text-decoration: none;
+        transition: color ease-in-out 0.2s;
+    }
+
+    @include media-breakpoint-up(lg) {
+        transform: translateX(0);
+    }
+}
+
+
+
+

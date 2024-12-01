@@ -1,0 +1,10 @@
+<app-page-wrapper [activePageIndex]="2">
+    <div class="bg-white shadow rounded overflow-hidden">
+        @for (item of apiManager.data(); track $index) {
+            <app-equipment-item 
+                [equipmentItem]="item"
+                [index]="$index"
+                (deleteEvent)="onDeleteEvent($event)"/>
+        }
+    </div>
+</app-page-wrapper>

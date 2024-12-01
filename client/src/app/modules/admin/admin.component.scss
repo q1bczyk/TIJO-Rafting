@@ -1,0 +1,20 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.admin-wrapper{
+    min-height: 100vh;
+    transition: all ease-in-out 0.3s;
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+.admin-wrapper-standard{
+    width: calc(100% - 220px);
+    padding: 10px 5% 10px 40px;
+}
+
+.admin-wrapper-small{
+    width: 100%;
+    padding: 10px 5%;
+}
+
