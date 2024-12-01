@@ -41,8 +41,4 @@ PostgreSQL jest obiektowo-relacyjnym systemem do zarządzania bazą danych wykor
 Angular to framework zaprojektowany przez Google, który korzysta z języka TypeScript. Angular pozwala na szybkie budowanie aplikacji webowych. Początkowo Angular pozwalal na budowanie aplikacji jednostronicowe ale ostatnie aktualizacje wzbogaciły framweork w renderowanie po stronie serwera. 
 
 
-3. **Angular:** Frontend odpowiada za interfejs użytkownika, wysyła żądania do backendu (Express.js) i wyświetla dane użytkownikowi.
-4. **Node.js:** Służy jako fundament dla Express.js i umożliwia obsługę serwera.
-
-Ten stos technologiczny pozwala na pełne tworzenie aplikacji webowych od bazy danych po interfejs użytkownika.
 
