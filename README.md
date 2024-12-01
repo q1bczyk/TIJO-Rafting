@@ -32,7 +32,7 @@ Późniejsza faza projektu
 ### Technologie użyte w Projekcie 
 
 ##### 1. .NET
-Platforma programistyczna opracowana przez Microsoft, obejmująca środowisko uruchomieniowe oraz biblioteki klas dostarczające standardowe funkcjonalności dla aplikacji. Środowisko wspiera kilka języków programowania, projekt napisany jest w języku C#.
+Platforma programistyczna opracowana przez Microsoft, obejmująca środowisko uruchomieniowe oraz biblioteki klas dostarczające standardowe funkcjonalności dla aplikacji. Środowisko wspiera kilka języków programowania, między innymi C# w ,którym napisany jest projekt.
 
 ##### 2. PostgreSql
 PostgreSQL jest obiektowo-relacyjnym systemem do zarządzania bazą danych wykorzystującą język SQL. System udostępnia wiele funkcji pozwalających między innymi na wykonywanie oraz optymalizowanie zapytań SQL, tworzenie i wykonywanie procedur, wykonywanie transakcji.
